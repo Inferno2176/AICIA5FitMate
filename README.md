@@ -81,9 +81,9 @@ Navigate to `http://localhost:5173` in your browser!
 
 ### Tabbed Dashboard & AI Engine
 <p align="center">
-  <img src="assets/stayright_7.png" alt="Diet Plan" width="400" style="border-radius: 12px; margin: 10px;" />
-  <img src="assets/stayright_10.png" alt="Workout Plan" width="400" style="border-radius: 12px; margin: 10px;" />
-  <img src="assets/stayright_11.png" alt="Chat Assisstant" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_7.png" alt="Diet Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_10.png" alt="Workout Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_11.png" alt="Chat Assisstant" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
 </p>
 
 ---
