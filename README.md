@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="100" />
   
-  <h1>StayRight ✨</h1>
+  <h1>StayRight</h1>
 
   **Your Intelligent, Real-Time Fitness & Nutrition Companion**
   
@@ -19,27 +19,27 @@
 
 <br />
 
-> 🏆 **Research Implementation**
+> **Research Implementation**
 > 
 > This project is the modern technology stack migration (React + Python) of the core architecture described in the research paper: *"FitMate AI-Powered Fitness Companion", Patidar et al., IEEE ICTBIG 2024*.
 
 ---
 
-## ✨ Features
+## Features
 
-- ⚡ **Comprehensive Health Metrics:** Instantly calculates your BMI, BMR (Mifflin-St Jeor), and Total Daily Energy Expenditure (TDEE).
-- 🧠 **AI-Powered Tabbed Architecture:** Dedicated AI-generated tabs for your Custom Diet Plan, Custom Workout Plan, and an interactive Chat Assistant.
-- 🌊 **Real-Time Streaming:** AI responses are streamed directly to the UI, providing an ultra-fast, professional experience with built-in multi-model fallback.
-- 🎨 **Premium UI:** A stunning frontend featuring a multi-step onboarding wizard, responsive glass-panel aesthetics, and a global Dark/Light mode toggle.
-- 🏥 **Health Condition Aware:** The AI strictly tailors advice to respect existing diseases (like PCOS, Diabetes, Asthma, or Heart Disease) and dietary preferences (Vegan, Paleo, etc.).
+- **Comprehensive Health Metrics:** Instantly calculates your BMI, BMR (Mifflin-St Jeor), and Total Daily Energy Expenditure (TDEE).
+- **AI-Powered Tabbed Architecture:** Dedicated AI-generated tabs for your Custom Diet Plan, Custom Workout Plan, and an interactive Chat Assistant.
+- **Real-Time Streaming:** AI responses are streamed directly to the UI, providing an ultra-fast, professional experience with built-in multi-model fallback.
+- **Premium UI:** A stunning frontend featuring a multi-step onboarding wizard, responsive glass-panel aesthetics, and a global Dark/Light mode toggle.
+- **Health Condition Aware:** The AI strictly tailors advice to respect existing diseases (like PCOS, Diabetes, Asthma, or Heart Disease) and dietary preferences (Vegan, Paleo, etc.).
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 Get StayRight running locally in under 2 minutes.
 
-### 1️⃣ Clone & Configure Backend
+### 1️. Clone & Configure Backend
 ```bash
 # Clone the repository
 git clone https://github.com/Inferno2176/AICIA5FitMate.git
@@ -52,41 +52,43 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### 2️⃣ Start the Frontend
+### 2️. Start the Frontend
 Open a new terminal in the project root:
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-Navigate to `http://localhost:5173` in your browser! 🎉
+Navigate to `http://localhost:5173` in your browser!
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### Multi-Step Onboarding
+### Light and Dark theme
 <p align="center">
   <img src="assets/stayright_1.png" alt="Dashboard Overview (Light Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
-  <img src="assets/stayright_4.png" alt="Custom Diet Plan (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
-  <img src="assets/stayright_3.png" alt="Custom Workout Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
-  <img src="assets/stayright_2.png" alt="Interactive Chat Assistant" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+  
+### Multi-Step Onboarding
+<p align="center">
+  <img src="assets/stayright_6.png" alt="Body Metrics (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_5.png" alt="Dietary Preferences (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_2.png" alt="Lifestyle (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_4.png" alt="Fitness Goal (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_3.png" alt="Health and Medical (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
 </p>
 
 ### Tabbed Dashboard & AI Engine
 <p align="center">
-  <img src="assets/stayright_7.png" alt="Step 5: Health & Medical" width="400" style="border-radius: 12px; margin: 10px;" />
-</p>
-<p align="center">
-  <img src="assets/stayright_8.png" alt="Step 3: Lifestyle" width="400" style="border-radius: 12px; margin: 10px;" />  
-</p>
-<p align="center">
-  <img src="assets/stayright_9.png" alt="Step 1: Body Metrics (Light Mode)" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_7.png" alt="Diet Plan" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_10.png" alt="Workout Plan" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_11.png" alt="Chat Assisstant" width="400" style="border-radius: 12px; margin: 10px;" />
 </p>
 
 ---
 
-## 🏗️ Architecture Flow
+## Architecture Flow
 
 ```mermaid
 sequenceDiagram
