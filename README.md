@@ -1,4 +1,6 @@
 <div align="center">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="100" />
+  
   <h1>StayRight ✨</h1>
 
   **Your Intelligent, Real-Time Fitness & Nutrition Companion**
@@ -72,7 +74,10 @@ Navigate to `http://localhost:5173` in your browser! 🎉
 
 ### Tabbed Dashboard & AI Engine
 <p align="center">
-  <img src="assets/stayright_4.png" alt="Custom Diet Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_1.png" alt="Dashboard Overview (Light Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+</p>
+<p align="center">
+  <img src="assets/stayright_4.png" alt="Custom Diet Plan (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
 </p>
 <p align="center">
   <img src="assets/stayright_3.png" alt="Custom Workout Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
