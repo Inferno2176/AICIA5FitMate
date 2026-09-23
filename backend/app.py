@@ -153,7 +153,7 @@ def get_advice():
             6. DO NOT USE ANY EMOJIS in your response. Maintain a strictly professional tone.
             """
 
-        models_to_try = ['gemini-3.6-flash', 'gemini-2.5-flash', 'gemini-1.5-flash']
+        models_to_try = ['gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.6-flash', 'gemini-2.5-flash']
         response = None
         
         for model_name in models_to_try:
