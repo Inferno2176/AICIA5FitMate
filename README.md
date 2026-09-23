@@ -63,7 +63,37 @@ Navigate to `http://localhost:5173` in your browser! 🎉
 
 ---
 
-## 🏗️ Architecture
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/screenshot1.png" alt="FitMate Lite Dashboard" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+<p align="center">
+  <img src="assets/screenshot3.png" alt="Streaming AI Response" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+</p>
+
+---
+
+## 🏗️ Architecture Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant React UI
+    participant Flask Backend
+    participant Google Gemini
+
+    User->>React UI: Enters Weight, Height, Age, Goal
+    React UI->>Flask Backend: POST /api/bmi {data}
+    Flask Backend-->>React UI: JSON {bmi, category}
+    
+    User->>React UI: Asks Question "What should I eat?"
+    React UI->>Flask Backend: POST /api/advice {question, category, goal}
+    Flask Backend->>Google Gemini: Generates Context-Aware Prompt
+    Google Gemini-->>Flask Backend: Streams Answer Chunks
+    Flask Backend-->>React UI: Streams Data (Text/Plain)
+    React UI-->>User: Renders Markdown in Real-Time
+```
 
 <details>
 <summary><b>Click to view how the code maps to the research paper architecture</b></summary>
