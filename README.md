@@ -67,23 +67,21 @@ Navigate to `http://localhost:5173` in your browser! 🎉
 
 ### Multi-Step Onboarding
 <p align="center">
-  <img src="assets/stayright_9.png" alt="Step 1: Body Metrics (Light Mode)" width="400" style="border-radius: 12px; margin: 10px;" />
-  <img src="assets/stayright_8.png" alt="Step 3: Lifestyle" width="400" style="border-radius: 12px; margin: 10px;" />
-  <img src="assets/stayright_7.png" alt="Step 5: Health & Medical" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_1.png" alt="Dashboard Overview (Light Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_4.png" alt="Custom Diet Plan (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_3.png" alt="Custom Workout Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_2.png" alt="Interactive Chat Assistant" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 ### Tabbed Dashboard & AI Engine
 <p align="center">
-  <img src="assets/stayright_1.png" alt="Dashboard Overview (Light Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_7.png" alt="Step 5: Health & Medical" width="400" style="border-radius: 12px; margin: 10px;" />
 </p>
 <p align="center">
-  <img src="assets/stayright_4.png" alt="Custom Diet Plan (Dark Mode)" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+  <img src="assets/stayright_8.png" alt="Step 3: Lifestyle" width="400" style="border-radius: 12px; margin: 10px;" />  
 </p>
 <p align="center">
-  <img src="assets/stayright_3.png" alt="Custom Workout Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
-</p>
-<p align="center">
-  <img src="assets/stayright_2.png" alt="Interactive Chat Assistant" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="assets/stayright_9.png" alt="Step 1: Body Metrics (Light Mode)" width="400" style="border-radius: 12px; margin: 10px;" />
 </p>
 
 ---
