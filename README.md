@@ -1,9 +1,7 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="100" />
-  
-  # FitMate Lite ✨
+  <h1>StayRight ✨</h1>
 
-  **Your Intelligent, Real-Time Fitness Companion**
+  **Your Intelligent, Real-Time Fitness & Nutrition Companion**
   
   <p align="center">
     <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" /></a>
@@ -13,7 +11,7 @@
   </p>
 
   <p align="center">
-    <i>FitMate Lite transforms standard BMI calculations into highly personalized, streaming fitness and dietary advice using the power of Google Gemini AI.</i>
+    <i>StayRight (formerly FitMate) transforms standard health metrics into highly personalized, streaming fitness and dietary advice using the power of Google Gemini AI.</i>
   </p>
 </div>
 
@@ -27,17 +25,17 @@
 
 ## ✨ Features
 
-- ⚡ **Instant BMI Analysis:** Deterministically calculates your BMI and classifies it instantly on the frontend.
-- 🧠 **AI-Powered Advice:** Leverages Google's `gemini-3.6-flash` model to analyze your BMI, fitness goals, and custom queries.
-- 🌊 **Real-Time Streaming:** AI responses are streamed directly to the UI, providing an ultra-fast, ChatGPT-like experience.
-- 🎨 **Glassmorphism UI:** A stunning, premium frontend with a responsive glass-panel aesthetic and a global Dark/Light mode toggle.
-- 📝 **Rich Markdown Rendering:** All AI advice is beautifully formatted in real-time with headings, bullet points, and bold text.
+- ⚡ **Comprehensive Health Metrics:** Instantly calculates your BMI, BMR (Mifflin-St Jeor), and Total Daily Energy Expenditure (TDEE).
+- 🧠 **AI-Powered Tabbed Architecture:** Dedicated AI-generated tabs for your Custom Diet Plan, Custom Workout Plan, and an interactive Chat Assistant.
+- 🌊 **Real-Time Streaming:** AI responses are streamed directly to the UI, providing an ultra-fast, professional experience with built-in multi-model fallback.
+- 🎨 **Premium UI:** A stunning frontend featuring a multi-step onboarding wizard, responsive glass-panel aesthetics, and a global Dark/Light mode toggle.
+- 🏥 **Health Condition Aware:** The AI strictly tailors advice to respect existing diseases (like PCOS, Diabetes, Asthma, or Heart Disease) and dietary preferences (Vegan, Paleo, etc.).
 
 ---
 
 ## 🚀 Quick Start
 
-Get FitMate Lite running locally in under 2 minutes.
+Get StayRight running locally in under 2 minutes.
 
 ### 1️⃣ Clone & Configure Backend
 ```bash
@@ -65,11 +63,22 @@ Navigate to `http://localhost:5173` in your browser! 🎉
 
 ## 📸 Screenshots
 
+### Multi-Step Onboarding
 <p align="center">
-  <img src="assets/screenshot1.png" alt="FitMate Lite Dashboard" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="assets/stayright_9.png" alt="Step 1: Body Metrics (Light Mode)" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_8.png" alt="Step 3: Lifestyle" width="400" style="border-radius: 12px; margin: 10px;" />
+  <img src="assets/stayright_7.png" alt="Step 5: Health & Medical" width="400" style="border-radius: 12px; margin: 10px;" />
+</p>
+
+### Tabbed Dashboard & AI Engine
+<p align="center">
+  <img src="assets/stayright_4.png" alt="Custom Diet Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
 </p>
 <p align="center">
-  <img src="assets/screenshot3.png" alt="Streaming AI Response" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+  <img src="assets/stayright_3.png" alt="Custom Workout Plan" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); margin-bottom: 20px;" />
+</p>
+<p align="center">
+  <img src="assets/stayright_2.png" alt="Interactive Chat Assistant" width="800" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
 </p>
 
 ---
@@ -83,67 +92,35 @@ sequenceDiagram
     participant Flask Backend
     participant Google Gemini
 
-    User->>React UI: Enters Weight, Height, Age, Goal
-    React UI->>Flask Backend: POST /api/bmi {data}
-    Flask Backend-->>React UI: JSON {bmi, category}
+    User->>React UI: Completes 5-step Onboarding Flow
+    React UI->>Flask Backend: POST /api/bmi {metrics, lifestyle, diseases}
+    Flask Backend-->>React UI: JSON {bmi, bmr, tdee, category}
     
-    User->>React UI: Asks Question "What should I eat?"
-    React UI->>Flask Backend: POST /api/advice {question, category, goal}
-    Flask Backend->>Google Gemini: Generates Context-Aware Prompt
+    React UI->>Flask Backend: Auto-triggers POST /api/advice {type: 'diet'}
+    Flask Backend->>Google Gemini: Context-Aware Prompt (Strictly Professional)
     Google Gemini-->>Flask Backend: Streams Answer Chunks
     Flask Backend-->>React UI: Streams Data (Text/Plain)
-    React UI-->>User: Renders Markdown in Real-Time
+    React UI-->>User: Renders Diet Plan Markdown in Real-Time
+    
+    User->>React UI: Clicks 'Workout Plan' or 'Chat' Tab
+    React UI->>Flask Backend: POST /api/advice {type: 'workout' / 'chat'}
+    Flask Backend->>Google Gemini: Dedicated Sub-Prompt
+    Google Gemini-->>React UI: Streams Dedicated Content
 ```
 
 <details>
 <summary><b>Click to view how the code maps to the research paper architecture</b></summary>
 <br/>
 
-| Paper Component (Fig. 2 / Sec. IV) | FitMate Lite Implementation |
-|------------------------------------|-----------------------------|
-| **User Inputs** (Weight, Height, Age, Gender) | React Form Component (`BmiCalculator.jsx`) |
-| **BMI Calculation Branch** | Python Backend `/api/bmi` Endpoint |
-| **BMI Classification** | Python Deterministic Logic |
-| **Query Processing Branch** | Python Backend `/api/advice` Endpoint ➡️ Google Gemini |
-| **Error Handling** | API Error Handling + React Validation State |
-| **Frontend UI** | React.js (Vite + Custom Glassmorphism CSS) |
-| **Backend Server** | Python (Flask API Server) |
-
-</details>
-
-<details>
-<summary><b>Click to view the directory structure</b></summary>
-<br/>
-
-```text
-fitmate-lite/
-├── frontend/                 # React UI Workspace
-│   ├── index.html
-│   ├── src/
-│   │   ├── App.jsx           # Application Layout & Theme 
-│   │   ├── index.css         # Glassmorphism Styles
-│   │   └── components/
-│   │       ├── BmiCalculator.jsx  
-│   │       └── AiAdvisor.jsx      # Streaming Chat Interface
-└── backend/                  # Python API Server
-    ├── app.py                # Flask Server Routes
-    ├── requirements.txt      
-    └── .env.example          
-```
+- **Data Collection Module:** Implemented via the sleek React `<Onboarding />` wizard which captures age, weight, height, lifestyle, and diseases.
+- **Decision Engine (Rule-based):** `calculate_bmr` and `calculate_tdee` in `backend/app.py` process the physical parameters deterministically.
+- **Generative AI Module:** Implemented via `google-generativeai` utilizing `gemini-3.6-flash` as the core reasoning engine.
+- **User Interface Layer:** React Vite app running a custom glassmorphism design system in `index.css`.
 </details>
 
 ---
 
-## 🔒 Limitations & Scope
-
-To keep this project lightweight and laser-focused on demonstrating the core AI architecture, the following features are intentionally omitted:
-- 🗄️ **No Database:** All state is held temporarily in the React client.
-- 👤 **No Authentication:** No user login or session management.
-- ⌚ **No Wearable Integration:** Wearable data is not synced.
-- 💬 **Stateless AI:** The AI processes a single query at a time without maintaining conversational memory.
-
-<br />
-
-<div align="center">
-  <sub>Built with ❤️ for modern web architectures.</sub>
-</div>
+## 🛠️ Built With
+- **Frontend:** React 18, Vite, Lucide React (Icons), React Markdown
+- **Backend:** Python 3, Flask, Flask-CORS
+- **AI Integration:** Google Generative AI Python SDK
